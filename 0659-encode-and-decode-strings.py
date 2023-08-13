@@ -5,7 +5,6 @@ class Solution:
     """
 
     def encode(self, strs):
-        # write your code here
         return "".join([str(len(s)) + "#" + s] for s in strs)
 
     """
@@ -14,7 +13,6 @@ class Solution:
     """
 
     def decode(self, str):
-        # write your code here
         i, res = 0, []
         while i < len(str):
             j = i
