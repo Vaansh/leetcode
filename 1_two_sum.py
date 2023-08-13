@@ -1,3 +1,8 @@
 class Solution:
-    def isAnagram(self, s: str, t: str) -> bool:
-        return Counter(s) == Counter(t)
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        d = {}
+        for i, n in enumerate(nums):
+            c = target - n
+            if c in d:
+                return [d[c], i]
+            d[n] = i
