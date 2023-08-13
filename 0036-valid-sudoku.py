@@ -13,6 +13,7 @@ class Solution:
                 grid[r // 3, c // 3].add(val)
         return True
 
+
 # class Solution:
 #     def isValidSudoku(self, board: List[List[str]]) -> bool:
 #         def get_cols(matrix):
@@ -21,7 +22,7 @@ class Solution:
 #                 for j, r in enumerate(row):
 #                     res[j].append(r)
 #             return res
-        
+
 #         def valid_row_or_col(val):
 #             seen = []
 #             for c in val:
@@ -31,7 +32,7 @@ class Solution:
 #                     return False
 #                 seen.append(c)
 #             return True
-        
+
 #         def valid_grid(grid):
 #             seen = []
 #             for row in grid:
@@ -46,11 +47,11 @@ class Solution:
 #         for r in board:
 #             if not valid_row_or_col(r):
 #                 return False
-        
+
 #         for c in get_cols(board):
 #             if not valid_row_or_col(c):
 #                 return False
-        
+
 #         for i in range(0, 9, 3):
 #             for j in range(0, 9, 3):
 #                 grid = [row[j : j + 3] for row in board[i : i + 3]]

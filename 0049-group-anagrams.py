@@ -7,5 +7,5 @@ class Solution:
             temp = d.get(s, [])
             temp.append(st)
             d[s] = temp
-        
+
         return d.values()
