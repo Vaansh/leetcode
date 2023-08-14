@@ -9,7 +9,6 @@ class Solution:
 
         while l < r:
             l_max, r_max = max(l_max, height[l]), max(r_max, height[r])
-
             if height[l] < height[r]:
                 res += l_max - height[l]
                 l += 1
