@@ -20,7 +20,6 @@ class Solution:
 #             res = max(res, r - l + 1)
 #         return res
 
-
 # class Solution:
 #     def lengthOfLongestSubstring(self, s: str) -> int:
 #         res = 0
