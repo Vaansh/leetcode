@@ -7,4 +7,3 @@ class Solution:
             elif "--" in o:
                 res -= 1
         return res
-    
