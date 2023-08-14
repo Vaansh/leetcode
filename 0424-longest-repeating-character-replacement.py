@@ -5,8 +5,8 @@ class Solution:
 
         for r, r_char in enumerate(s):
             freq[r_char] = freq.get(r_char, 0) + 1
-
-            window_len, max_freq = r - l + 1, max(freq.values())
+            window_len = r - l + 1
+            max_freq = max(freq.values())
             if window_len - max_freq <= k:
                 res = max(res, window_len)
             else:
