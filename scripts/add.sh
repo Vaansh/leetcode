@@ -50,4 +50,4 @@ for file in $deleted_files; do
 done
 
 # Push changes to the remote repository
-git push origin master
+git push origin main
