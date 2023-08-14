@@ -8,6 +8,7 @@ class Solution:
                 continue
 
             l, r = i + 1, len(nums) - 1
+
             while l < r:
                 t = n + nums[l] + nums[r]
                 if t < 0:
