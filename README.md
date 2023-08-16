@@ -25,7 +25,7 @@ To https://github.com/Vaansh/leetcode.git
 
 $ git log
 commit <hash> (HEAD -> main, origin/main)
-Author: name <email>
+Author: <name> <email>
 Date:   <timestamp>
     added solution for problem 0001
 ```
