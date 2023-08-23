@@ -1,9 +1,9 @@
 class Solution:
     def minSwaps(self, s: str) -> int:
-        count = 0
+        res = 0
         for c in s:
             if c == "[":
-                count += 1
-            elif count != 0:
-                count -= 1
-        return (count + 1) // 2
+                res += 1
+            elif res:
+                res -= 1
+        return (res + 1) // 2
