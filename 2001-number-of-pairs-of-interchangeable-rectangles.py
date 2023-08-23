@@ -4,12 +4,13 @@ class Solution:
         ratio_map = {}
 
         for r in rectangles:
-            ratio = r[0]/r[1]
+            ratio = r[0] / r[1]
             ratio_map[ratio] = ratio_map.get(ratio, 0) + 1
-        
+
         for n in ratio_map.values():
-            res += n ** 2 - sum(range(n + 1))
+            res += n**2 - sum(range(n + 1))
         return res
+
 
 # (MLE)
 # class Solution:
