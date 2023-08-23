@@ -11,5 +11,5 @@ class Solution:
                 return True
             s2_freq[s2[i - n]] -= 1
             s2_freq[s2[i]] += 1
-        
+
         return s1_freq == s2_freq
