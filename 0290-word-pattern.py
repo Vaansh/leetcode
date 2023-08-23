@@ -1,3 +1,6 @@
+from itertools import zip_longest
+
+
 class Solution:
     def wordPattern(self, pattern: str, s: str) -> bool:
         s = s.split()
