@@ -1,5 +1,6 @@
 from collections import Counter
 
+
 class Solution:
     def findAnagrams(self, s: str, t: str):
         res = []
