@@ -7,6 +7,7 @@
 rename "."
 
 # lint files
+isort .
 black .
 
 # Add all changes, staged or unstaged
