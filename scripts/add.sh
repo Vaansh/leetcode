@@ -3,7 +3,10 @@
 . ./scripts/count.sh
 . ./scripts/rename.sh
 
+# rename files
 rename "."
+
+# lint files
 black .
 
 # Add all changes, staged or unstaged
