@@ -1,7 +1,7 @@
 from random import choice
 
-class RandomizedSet:
 
+class RandomizedSet:
     def __init__(self):
         self.m, self.s = {}, []
 
