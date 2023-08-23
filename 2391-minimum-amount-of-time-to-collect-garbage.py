@@ -12,7 +12,7 @@ class Solution:
                 res += travel[i] * 3
 
         last_g, last_p, last_m = len(travel), len(travel), len(travel)
-        
+
         while units[last_g][0] == 0 and last_g > 0:
             last_g -= 1
 
