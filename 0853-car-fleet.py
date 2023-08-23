@@ -3,8 +3,8 @@ class Solution:
         res = 0
         prev = None
         for p, s in sorted(zip(position, speed), reverse=True):
-            t = (target - p) / s
-            if not prev or t > prev:
-                prev = t
+            time = (target - p) / s
+            if not prev or time > prev:
+                prev = time
                 res += 1
         return res
