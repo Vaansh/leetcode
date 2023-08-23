@@ -1,8 +1,8 @@
 # LeetCode
 
-1. Add file name to directory with the solution directly from LeetCode submission
+## Adding Solutions
 
-Example:
+1. Add file name to directory with the solution directly from LeetCode submission. Example:
 
 ```
 $ touch "1. Two Sum"
@@ -10,9 +10,7 @@ $ vi "1. Two Sum"
 ...
 ```
 
-2. Run the `sh scripts/add.sh` utility script to count number of solutions, rename to file name, commit with appropriate message (ex: `added/updated/deleted solution for problem 0001`), and push to repository.
-
-Example:
+2. Run the `sh scripts/add.sh` utility script to count number of solutions, rename to file name, commit with appropriate message (ex: `added/updated/deleted solution for problem 0001`), and push to repository. Example:
 
 ```sh
 $ sh scripts/add.sh
