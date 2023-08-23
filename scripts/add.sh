@@ -4,6 +4,7 @@
 . ./scripts/rename.sh
 
 rename "."
+black .
 
 # Add all changes, staged or unstaged
 git add -A
