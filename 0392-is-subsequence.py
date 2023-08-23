@@ -11,6 +11,7 @@ class Solution:
                 return True
         return l == len(s)
 
+
 # class Solution:
 #     def isSubsequence(self, s: str, t: str) -> bool:
 #         if len(s) == 0:
