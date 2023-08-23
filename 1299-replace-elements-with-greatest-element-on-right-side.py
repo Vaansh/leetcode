@@ -5,7 +5,7 @@ class Solution:
 
         if len(arr) == 0:
             return res
-        
+
         res.append(-1)
         for i in range(len(arr) - 1, 0, -1):
             max_num = max(max_num, arr[i])
