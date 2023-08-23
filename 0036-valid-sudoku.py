@@ -13,6 +13,7 @@ class Solution:
                 grid[r // 3, c // 3].add(val)
         return True
 
+
 # class Solution:
 #     def isValidSudoku(self, board: List[List[str]]) -> bool:
 #         def get_cols(matrix):
