@@ -8,8 +8,7 @@ class Solution:
         for p in s:
             if p in left_map:
                 stack.append(p)
-
-            if p in right_map:
+            elif p in right_map:
                 if len(stack) == 0:
                     return False
                 elif left_map[stack.pop()] != p:
