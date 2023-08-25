@@ -5,8 +5,10 @@
 1. Add file name to directory with the solution directly from LeetCode submission. Example:
 
 ```
-$ touch "1. Two Sum"
-$ vi "1. Two Sum"
+$ touch "python/1. Two Sum"
+$ vi "python/1. Two Sum"
+$ touch "java/1. Two Sum"
+$ vi "java/1. Two Sum"
 .
 .
 ```
@@ -16,7 +18,8 @@ $ vi "1. Two Sum"
 ```sh
 $ sh scripts/add.sh
 number of problems solved: 12
-Renamed './1. Two Sum' to '0001-two-sum.py'
+Renamed 'python/1. Two Sum' to '0001-two-sum.py'
+Renamed 'java/1. Two Sum' to '0001-two-sum.java'
 Writing objects: 100% (6/6), 1.11 KiB | 1.11 MiB/s, done.
 .
 .
