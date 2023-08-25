@@ -16,7 +16,7 @@
 <p align="center">
 	All my solutionns.
 	<br />
-	<a href="https://github.com/Vaansh/leetcode"><strong>See the solutions »</strong></a>
+	<a href="https://github.com/Vaansh/leetcode"><strong>Explore the page »</strong></a>
 	<br />
 	<br />
 </p>
