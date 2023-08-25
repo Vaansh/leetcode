@@ -71,11 +71,6 @@ Python     2
 Java       2
 ------------------------------
 Renamed 'python/1. Two Sum' to '0001-two-sum.py'
-Writing objects: 100% (6/6), 1.11 KiB | 1.11 MiB/s, done.
-.
-.
-To https://github.com/Vaansh/leetcode.git
-   <hash>  main -> main
 
 $ git log
 commit  <hash> (HEAD -> main, origin/main)
