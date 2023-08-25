@@ -7,20 +7,20 @@ count() {
     # Construct the updated table with Markdown formatting
     updated_table="<!-- SOLUTIONS_START -->
     
-    <table style='width:100%; text-align:left;'>
-    <tr>
-    <th style='text-align:center;'>Language</th>
-    <th style='text-align:center;'>Number of Solutions</th>
-    </tr>
-    <tr>
-    <td>Python</td>
-    <td>$python_count</td>
-    </tr>
-    <tr>
-    <td>Java</td>
-    <td>$java_count</td>
-    </tr>
-    </table>
+<table style='width:100%; text-align:left;'>
+<tr>
+<th style='text-align:center;'>Language</th>
+<th style='text-align:center;'>Number of Solutions</th>
+</tr>
+<tr>
+<td>Python</td>
+<td>$python_count</td>
+</tr>
+<tr>
+<td>Java</td>
+<td>$java_count</td>
+</tr>
+</table>
     
 <!-- SOLUTIONS_END -->
 "
