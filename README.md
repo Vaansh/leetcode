@@ -27,23 +27,23 @@
 ## Current Status
 
 <!-- SOLUTIONS_START -->
-
-<table style='width:100%; text-align:left;'>
-<tr>
-<th style='text-align:center;'>Language</th>
-<th style='text-align:center;'>Number of Solutions</th>
-</tr>
-<tr>
-<td>Python</td>
-<td>      82</td>
-</tr>
-<tr>
-<td>Java</td>
-<td>       0</td>
-</tr>
-</table>
-
-<!-- SOLUTIONS_END -->
+    
+    <table style='width:100%; text-align:left;'>
+    <tr>
+    <th style='text-align:center;'>Language</th>
+    <th style='text-align:center;'>Number of Solutions</th>
+    </tr>
+    <tr>
+    <td>Python</td>
+    <td>      82</td>
+    </tr>
+    <tr>
+    <td>Java</td>
+    <td>       0</td>
+    </tr>
+    </table>
+    
+    <!-- SOLUTIONS_END -->
 
 ## Adding Solutions
 
@@ -65,7 +65,12 @@ Example:
 
 ```sh
 $ sh scripts/add.sh
-number of problems solved: 12
+------------------------------
+Language   Number of Solutions
+------------------------------
+Python     2
+Java       2
+------------------------------
 Renamed 'python/1. Two Sum' to '0001-two-sum.py'
 Writing objects: 100% (6/6), 1.11 KiB | 1.11 MiB/s, done.
 .
