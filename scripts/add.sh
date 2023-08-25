@@ -8,8 +8,8 @@ rename "python/"
 rename "java/"
 
 # auto-lint Python files
-isort .
-black .
+isort python/
+black python/
 
 # Add all changes, staged or unstaged
 git add -A
@@ -101,4 +101,4 @@ for file in $moved_files; do
 done
 
 # Push changes to the remote repository
-# echo push origin main
+git push origin main
