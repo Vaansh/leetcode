@@ -1,3 +1,12 @@
 #!/bin/bash
 
-echo "number of problems solved: $(($(ls -1 | wc -l) - 1))"
+python_count=$(find . -maxdepth 1 -type f -name "*.py" | wc -l)
+java_count=$(find ./java -type f -name "*.java" | wc -l)
+
+echo "Number of solutions solved:"
+echo "------------------------------"
+printf "%-10s %s\n" "Language" "Number of Solutions"
+echo "------------------------------"
+printf "%-10s %d\n" "Python" $python_count
+printf "%-10s %d\n" "Java" $java_count
+echo "------------------------------"
