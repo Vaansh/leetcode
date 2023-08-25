@@ -4,9 +4,24 @@ class Solution:
             while l >= 0 and r < len(s) and s[l] == s[r]:
                 l -= 1
                 r += 1
-            return s[l + 1 : r]
+            return (s[l + 1 : r], len(s[l + 1 : r]))
 
         res = ""
         for i in range(len(s)):
-            res = max(res, helper(i, i), helper(i, i + 1), key=len)
+            res = max(
+                (res, len(res)), helper(i, i), helper(i, i + 1), key=lambda x: x[1]
+            )[0]
         return res
+
+
+# class Solution:
+#     def longestPalindrome(self, s: str) -> str:
+#         def helper(l, r):
+#             while l >= 0 and r < len(s) and s[l] == s[r]:
+#                 l -= 1
+#                 r += 1
+#             return s[l + 1 : r]
+#         res = ""
+#         for i in range(len(s)):
+#             res = max(res, helper(i, i), helper(i, i + 1), key=len)
+#         return res
