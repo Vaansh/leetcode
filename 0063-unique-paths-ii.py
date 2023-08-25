@@ -3,22 +3,24 @@ class Solution:
         m, n = len(obstacleGrid), len(obstacleGrid[0])
         memo = {}
 
-        def uniquePathsWithObstacleHelper(i, j):
-            if i == m - 1 and j == n - 1:
-                return 1 if obstacleGrid[i][j] == 0 else 0
-
-            if i >= m or j >= n or obstacleGrid[i][j] == 1:
+        def helper(x, y):
+            if not (0 <= x < m and 0 <= y < n):
                 return 0
 
-            if (i, j) in memo:
-                return memo[(i, j)]
+            if obstacleGrid[x][y] == 1:
+                return 0
 
-            memo[(i, j)] = uniquePathsWithObstacleHelper(
-                i + 1, j
-            ) + uniquePathsWithObstacleHelper(i, j + 1)
-            return memo[(i, j)]
+            if x == m - 1 and y == n - 1:
+                return 0 if obstacleGrid[x][y] == 1 else 1
 
-        return uniquePathsWithObstacleHelper(0, 0)
+            if (x, y) in memo:
+                return memo[(x, y)]
+
+            res = helper(x + 1, y) + helper(x, y + 1)
+            memo[(x, y)] = res
+            return res
+
+        return helper(0, 0)
 
 
 # class Solution:
