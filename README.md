@@ -22,7 +22,7 @@
 </p>
 </p>
 
-**Adding Solutions**
+<h5 align="center">Adding Solutions:</h5>
 
 1. Add file name to directory with the solution directly from LeetCode submission.
 
@@ -36,7 +36,7 @@ $ vi "java/1. Two Sum"          # edit java sol.
 .
 ```
 
-1. Run the `sh scripts/add.sh` utility script to count number of solutions, rename to file name, commit with appropriate message (ex: `<language> : added/updated/deleted solution for problem 0001`), and push to repository.
+2. Run the `sh scripts/add.sh` utility script to count number of solutions, rename to file name, commit with appropriate message (ex: `<language> : added/updated/deleted solution for problem 0001`), and push to repository.
 
 Example:
 
