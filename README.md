@@ -22,7 +22,20 @@
 </p>
 </p>
 
-<h4>Adding Solutions:</h4>
+<!-- TEAM MEMBERS -->
+
+## Current Status
+
+<!-- SOLUTIONS_START -->
+
+| Language  | Number of Solutions |
+| --------- | ------------------- |
+| Header    | Title               |
+| Paragraph | Text                |
+
+<!-- SOLUTIONS_END -->
+
+## Adding Solutions
 
 1. Add file name to directory with the solution directly from LeetCode submission.
 
