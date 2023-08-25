@@ -22,7 +22,8 @@ count() {
     </tr>
     </table>
     
-    <!-- SOLUTIONS_END -->"
+<!-- SOLUTIONS_END -->
+"
     
     # Read the README.md contents
     readme_contents=$(cat README.md)
