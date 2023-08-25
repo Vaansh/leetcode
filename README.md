@@ -56,8 +56,6 @@ Example:
 $ touch "python/1. Two Sum"     # create python sol.
 $ vi "python/1. Two Sum"        # add python sol.
 $ vi "java/1. Two Sum"          # edit java sol.
-.
-.
 ```
 
 2. Run the `sh scripts/add.sh` utility script to count number of solutions, rename to file name, commit with appropriate message (ex: `<language> : added/updated/deleted solution for problem 0001`), and push to repository.
@@ -84,9 +82,5 @@ commit  <hash> (HEAD -> main, origin/main)
 Author: <name> <email>
 Date:   <timestamp>
     python: added solution for problem 0001
-
-commit  <hash> (HEAD -> main, origin/main)
-Author: <name> <email>
-Date:   <timestamp>
     java: updated solution for problem 0001
 ```
