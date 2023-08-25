@@ -22,7 +22,7 @@
 </p>
 </p>
 
-<h4 align="center">Adding Solutions:</h4>
+<h4>Adding Solutions:</h4>
 
 1. Add file name to directory with the solution directly from LeetCode submission.
 
