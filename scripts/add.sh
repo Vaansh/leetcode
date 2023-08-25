@@ -4,8 +4,8 @@
 . ./scripts/rename.sh
 
 # rename files
-rename "python/"
-rename "java/"
+rename "python"
+rename "java"
 
 # auto-lint Python files
 isort python/
