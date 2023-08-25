@@ -78,7 +78,7 @@ Author: <name> <email>
 Date:   <timestamp>
     python: added solution for problem 0001
 
-commit  <hash> (HEAD -> main, origin/main)
+commit  <hash>
 Author: <name> <email>
 Date:   <timestamp>
     java: updated solution for problem 0001
