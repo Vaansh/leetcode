@@ -32,17 +32,13 @@ class Solution:
 #     ) -> int:
 #         mod = 10**9 + 7
 #         memo = {}
-
 #         def helper(i, j, moves):
 #             if not (0 <= i < m and 0 <= j < n):
 #                 return 1
-
 #             if moves == maxMove:
 #                 return 0
-
 #             if (i, j, moves) in memo:
 #                 return memo[(i, j, moves)] % mod
-
 #             memo[(i, j, moves + 1)] = (
 #                 helper(i + 1, j, moves + 1)
 #                 + helper(i - 1, j, moves + 1)
@@ -50,5 +46,4 @@ class Solution:
 #                 + helper(i, j - 1, moves + 1)
 #             )
 #             return memo[(i, j, moves + 1)] % mod
-
 #         return helper(startRow, startColumn, 0) % mod
