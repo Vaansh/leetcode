@@ -7,6 +7,8 @@
 rename "python"
 rename "java"
 
+count
+
 # auto-lint Python files
 isort python/
 black python/
