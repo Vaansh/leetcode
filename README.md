@@ -28,20 +28,20 @@
 
 <!-- SOLUTIONS_START -->
     
-    <table style='width:100%; text-align:left;'>
-    <tr>
-    <th style='text-align:center;'>Language</th>
-    <th style='text-align:center;'>Number of Solutions</th>
-    </tr>
-    <tr>
-    <td>Python</td>
-    <td>      82</td>
-    </tr>
-    <tr>
-    <td>Java</td>
-    <td>       0</td>
-    </tr>
-    </table>
+<table style='width:100%; text-align:left;'>
+<tr>
+<th style='text-align:center;'>Language</th>
+<th style='text-align:center;'>Number of Solutions</th>
+</tr>
+<tr>
+<td>Python</td>
+<td>      82</td>
+</tr>
+<tr>
+<td>Java</td>
+<td>       0</td>
+</tr>
+</table>
     
 <!-- SOLUTIONS_END -->
 
