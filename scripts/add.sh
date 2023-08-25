@@ -5,8 +5,9 @@
 
 # rename files
 rename "."
+rename "java/"
 
-# lint files
+# auto-lint Python files
 isort .
 black .
 
@@ -18,36 +19,59 @@ added_files=$(git diff --cached --name-only --diff-filter=A)
 modified_files=$(git diff --cached --name-only --diff-filter=M)
 deleted_files=$(git diff --cached --name-only --diff-filter=D)
 
-# Iterate over added files
+#!/bin/bash
+
 for file in $added_files; do
-    if [[ $file =~ ^[0-9]+-.*\.py$ ]]; then
-        file_name=$(basename "$file")
-        problem_number=$(echo "$file_name" | grep -oE '[0-9]+' | head -n 1)
-        git commit -m "added solution for problem $problem_number" "$file"
+    file_name=$(basename "$file")
+    if [[ $file_name =~ ^[0-9]+-(.*)(\.py|\.java)$ ]]; then
+        problem_number=${BASH_REMATCH[1]}
+        language_extension=${BASH_REMATCH[2]}
+        
+        if [ "$language_extension" == ".py" ]; then
+            language="python"
+        else
+            language="java"
+        fi
+        
+        git commit -m "$language: added solution for problem $problem_number" "$file"
     else
-        file_name=$(basename "$file")
         git commit -m "added file $file_name" "$file"
     fi
 done
 
 # Iterate over modified files
 for file in $modified_files; do
-    if [[ $file =~ ^[0-9]+-.*\.py$ ]]; then
-        file_name=$(basename "$file")
-        problem_number=$(echo "$file_name" | grep -oE '[0-9]+' | head -n 1)
-        git commit -m "updated solution for problem $problem_number" "$file"
+    file_name=$(basename "$file")
+    if [[ $file_name =~ ^[0-9]+-(.*)(\.py|\.java)$ ]]; then
+        problem_number=${BASH_REMATCH[1]}
+        language_extension=${BASH_REMATCH[2]}
+        
+        if [ "$language_extension" == ".py" ]; then
+            language="python"
+        else
+            language="java"
+        fi
+        
+        git commit -m "$language: updated solution for problem $problem_number" "$file"
     else
-        file_name=$(basename "$file")
         git commit -m "updated file $file_name" "$file"
     fi
 done
 
 # Iterate over deleted files
 for file in $deleted_files; do
-    if [[ $file =~ ^[0-9]+-.*\.py$ ]]; then
-        file_name=$(basename "$file")
-        problem_number=$(echo "$file_name" | grep -oE '[0-9]+' | head -n 1)
-        git commit -m "deleted solution for problem $problem_number" "$file"
+    file_name=$(basename "$file")
+    if [[ $file_name =~ ^[0-9]+-(.*)(\.py|\.java)$ ]]; then
+        problem_number=${BASH_REMATCH[1]}
+        language_extension=${BASH_REMATCH[2]}
+        
+        if [ "$language_extension" == ".py" ]; then
+            language="python"
+        else
+            language="java"
+        fi
+        
+        git commit -m "$language: deleted solution for problem $problem_number" "$file"
     else
         file_name=$(basename "$file")
         git commit -m "deleted file $file_name" "$file"
