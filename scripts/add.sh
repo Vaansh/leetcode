@@ -4,14 +4,14 @@
 . ./scripts/rename.sh
 
 # rename files
-rename "python"
+rename "."
 rename "java"
 
 count
 
 # auto-lint Python files
-isort python/
-black python/
+isort .
+black .
 
 # Add all changes, staged or unstaged
 git add -A
@@ -95,10 +95,10 @@ for file in $moved_files; do
             *) language="unknown" ;;
         esac
         
-        git commit -m "$language: moved solution for problem $problem_number" "$file"
+        git commit -m "$language: updated solution for problem $problem_number" "$file"
     else
         file_name=$(basename "$file")
-        git commit -m "moved file $file_name" "$file"
+        git commit -m "updated file $file_name" "$file"
     fi
 done
 
