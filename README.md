@@ -14,7 +14,7 @@
 	</a>
 <h3 align="center">LeetCode</h3>
 <p align="center">
-	All my solutions
+	All my solutions in one place.
 	<br />
 	<a href="https://github.com/Vaansh/leetcode"><strong>Explore the page »</strong></a>
 	<br />
@@ -44,7 +44,6 @@
 </table>
     
 <!-- SOLUTIONS_END -->
-
 
 
 ## Adding Solutions
