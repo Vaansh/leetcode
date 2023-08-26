@@ -35,7 +35,7 @@
 </tr>
 <tr>
 <td>Python</td>
-<td>      82</td>
+<td>      85</td>
 </tr>
 <tr>
 <td>Java</td>
@@ -44,6 +44,7 @@
 </table>
     
 <!-- SOLUTIONS_END -->
+
 
 
 ## Adding Solutions
