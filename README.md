@@ -39,11 +39,12 @@
 </tr>
 <tr>
 <td>Java</td>
-<td>       5</td>
+<td>       7</td>
 </tr>
 </table>
     
 <!-- SOLUTIONS_END -->
+
 
 
 
