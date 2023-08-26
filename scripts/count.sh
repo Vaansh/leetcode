@@ -1,7 +1,7 @@
 #!/bin/bash
 
 count() {
-    python_count=$(find ./python -type f -name "*.py" | wc -l)
+    python_count=$(find . -maxdepth 1 -type f -name "*.py" | wc -l)
     java_count=$(find ./java -type f -name "*.java" | wc -l)
     
     # Construct the updated table with Markdown formatting
