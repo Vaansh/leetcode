@@ -1,4 +1,3 @@
-# efficient top down
 class Solution:
     def uniquePaths(self, m: int, n: int) -> int:
         memo = [[None] * n for _ in range(m)]
