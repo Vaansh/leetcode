@@ -10,7 +10,7 @@
 <br />
 <p align="center">
 	<a href="https://github.com/Vaansh/leetcode">
-	<img src="https://scontent.fyto3-1.fna.fbcdn.net/v/t39.30808-6/305317853_616467910000160_3824851731065368025_n.png?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_aid=0&_nc_ohc=0A9m31hDRnwAX_Q0ZUJ&_nc_ht=scontent.fyto3-1.fna&oh=00_AfBo1Nu6rypCrNCAhz8suqrxPV6X7Cgse5zwQIpNkFPowQ&oe=64EE885B" alt="Logo" height="120">
+	<img src="https://leetcode.gallerycdn.vsassets.io/extensions/leetcode/vscode-leetcode/0.18.1/1652090923340/Microsoft.VisualStudio.Services.Icons.Default" alt="Logo" height="120">
 	</a>
 <h3 align="center">LeetCode</h3>
 <p align="center">
@@ -44,11 +44,6 @@
 </table>
     
 <!-- SOLUTIONS_END -->
-
-
-
-
-
 
 
 ## Adding Solutions
